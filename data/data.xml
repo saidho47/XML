@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="regression">
+     <test name="TestCase">
+          <parameter name="username" value="techfiosdemo@gmail.com" />
+          <parameter name="password" value="abc123" />
+          <parameter name="url" value="http://techfios.com/test/billing/?ng=admin/" />
+          <classes>
+                  <class name="test.TestCase" />
+          </classes>
+     </test>
+     <test name="AddContactTest">
+          <parameter name="username" value="techfiosdemo@gmail.com" />
+          <parameter name="password" value="abc123" />
+          <parameter name="FullName" value="SaidHo" />
+          <parameter name="Company" value="HoGroups" />
+          <parameter name="Phone" value="2672672677" />
+          <parameter name="Email" value="HoGroups@gmail.com" />
+          <parameter name="Address" value="123 qwerty" />
+          <parameter name="City" value="keyboard" />
+          <parameter name="Stat" value="PC" />
+          <parameter name="Zip" value="12345" />
+          <classes>
+                  <class name="test.AddContactTest" />
+          </classes>
+     </test>
+</suite>

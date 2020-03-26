@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [regression]">
+  <test thread-count="5" name="TestCase(failed)">
+    <parameter name="password" value="abc123"/>
+    <parameter name="url" value="http://techfios.com/test/billing/?ng=admin/"/>
+    <parameter name="username" value="techfiosdemo@gmail.com"/>
+    <classes>
+      <class name="test.TestCase">
+        <methods>
+          <include name="TechFiosLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.TestCase -->
+    </classes>
+  </test> <!-- TestCase(failed) -->
+  <test thread-count="5" name="AddContactTest(failed)">
+    <parameter name="Zip" value="12345"/>
+    <parameter name="password" value="abc123"/>
+    <parameter name="Company" value="HoGroups"/>
+    <parameter name="Email" value="HoGroups@gmail.com"/>
+    <parameter name="Stat" value="PC"/>
+    <parameter name="Address" value="123 qwerty"/>
+    <parameter name="Phone" value="2672672677"/>
+    <parameter name="FullName" value="SaidHo"/>
+    <parameter name="City" value="keyboard"/>
+    <parameter name="username" value="techfiosdemo@gmail.com"/>
+    <classes>
+      <class name="test.AddContactTest">
+        <methods>
+          <include name="AddingContacts" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.AddContactTest -->
+    </classes>
+  </test> <!-- AddContactTest(failed) -->
+</suite> <!-- Failed suite [regression] -->

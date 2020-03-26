@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-regression">
+              <span class="suite-name border-failed">regression</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-regression">
+                    <span>C:\Users\Said\eclipse-workspace\XmlData\data\data.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-regression">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-regression">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-regression">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-regression">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-regression">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-regression">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-regression" class="hide-methods failed suite-regression"> (hide)</a> <!-- hide-methods failed suite-regression -->
+                      <a href="#" panel-name="suite-regression" class="show-methods failed suite-regression"> (show)</a> <!-- show-methods failed suite-regression -->
+                    </span>
+                    <div class="method-list-content failed suite-regression">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-regression" title="test.AddContactTest" hash-for-method="AddingContacts(techfiosdemo@gmail.com, abc123, SaidHo, HoGroups, HoGroups@gmail.com, 2672672677, 123 qwerty, keyboa...)">AddingContacts(techfiosdemo@gmail.com, abc123, SaidHo, HoGroups, HoGroups@gmail.com, 2672672677, 123 qwerty, keyboa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-regression" title="test.TestCase" hash-for-method="TechFiosLogin(techfiosdemo@gmail.com, abc123, http://techfios.com/test/billing/?ng=admin/)">TechFiosLogin(techfiosdemo@gmail.com, abc123, http://techfios.com/test/billing/?ng=admin/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-regression -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-regression" class="panel regression">
+          <div class="suite-regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.TestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TechFiosLogin(techfiosdemo@gmail.com, abc123, http://techfios.com/test/billing/?ng=admin/)">
+                  </a> <!-- TechFiosLogin(techfiosdemo@gmail.com, abc123, http://techfios.com/test/billing/?ng=admin/) -->
+                  <span class="method-name">TechFiosLogin</span>
+                  <span class="parameters">(techfiosdemo@gmail.com, abc123, http://techfios.com/test/billing/?ng=admin/)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at test.TestCase.TechFiosLogin(TestCase.java:23)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression-class-failed -->
+          <div class="suite-regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.AddContactTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddingContacts(techfiosdemo@gmail.com, abc123, SaidHo, HoGroups, HoGroups@gmail.com, 2672672677, 123 qwerty, keyboa...)">
+                  </a> <!-- AddingContacts(techfiosdemo@gmail.com, abc123, SaidHo, HoGroups, HoGroups@gmail.com, 2672672677, 123 qwerty, keyboa...) -->
+                  <span class="method-name">AddingContacts</span>
+                  <span class="parameters">(techfiosdemo@gmail.com, abc123, SaidHo, HoGroups, HoGroups@gmail.com, 2672672677, 123 qwerty, keyboard, PC, 12345)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.sendKeys(Unknown Source)
+	at page.LoginClass.login(LoginClass.java:29)
+	at test.AddContactTest.AddingContacts(AddContactTest.java:25)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression-class-failed -->
+        </div> <!-- panel regression -->
+        <div panel-name="test-xml-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Said\eclipse-workspace\XmlData\data\data.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;regression&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestCase&quot;&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;abc123&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;http://techfios.com/test/billing/?ng=admin/&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;techfiosdemo@gmail.com&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.TestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestCase --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;AddContactTest&quot;&gt;
+    &lt;parameter name=&quot;Zip&quot; value=&quot;12345&quot;/&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;abc123&quot;/&gt;
+    &lt;parameter name=&quot;Company&quot; value=&quot;HoGroups&quot;/&gt;
+    &lt;parameter name=&quot;Email&quot; value=&quot;HoGroups@gmail.com&quot;/&gt;
+    &lt;parameter name=&quot;Stat&quot; value=&quot;PC&quot;/&gt;
+    &lt;parameter name=&quot;Address&quot; value=&quot;123 qwerty&quot;/&gt;
+    &lt;parameter name=&quot;Phone&quot; value=&quot;2672672677&quot;/&gt;
+    &lt;parameter name=&quot;FullName&quot; value=&quot;SaidHo&quot;/&gt;
+    &lt;parameter name=&quot;City&quot; value=&quot;keyboard&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;techfiosdemo@gmail.com&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.AddContactTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AddContactTest --&gt;
+&lt;/suite&gt; &lt;!-- regression --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestCase (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AddContactTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_regression');
+function tableData_regression() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TechFiosLogin')
+data.setCell(0, 2, 'test.TestCase')
+data.setCell(0, 3, 4784);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AddingContacts')
+data.setCell(1, 2, 'test.AddContactTest')
+data.setCell(1, 3, 2150);
+window.suiteTableData['regression']= { tableData: data, tableDiv: 'times-div-regression'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <div id="times-div-regression">
+              </div> <!-- times-div-regression -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TestCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TechFiosLogin(techfiosdemo@gmail.com, abc123, http://techfios.com/test/billing/?ng=admin/)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.AddContactTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AddingContacts(techfiosdemo@gmail.com, abc123, SaidHo, HoGroups, HoGroups@gmail.com, 2672672677, 123 qwerty, keyboa...)</span>
+                <span class="method-start">4817 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
